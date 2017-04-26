@@ -58,7 +58,7 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1><p align="left">Incomplete :</p></h1><button type="button" class="btn btn-outline-danger" style="background-color: #ff0000">Add A New Task</button><br>
+                <h1><p align="left">Incomplete :</p></h1><button type="button" class="btn btn-outline-danger" style="background-color: #ff0000">+ Add A New Task</button><br>
 
                 <br>
                 <br>
