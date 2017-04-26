@@ -14,8 +14,11 @@ require('database.php');
 	$sql="INSERT INTO acc (fname,lname,email,phone,birthday,gender,password) VALUES (
 	'$fname','$lname','$email','$phone','$birthday','$gender','$password')";
 
-	if(mysql_query($sql)){
-		echo "<h3> Student's data is inserted </h3>";
-	}
+	// if(mysql_query($sql)){
+	// 	echo "<h3> Student's data is inserted </h3>";
+	// }
+	$statement = $db->prepare($sql);
+	$statement->execute();
+	$statement->closeCursor();
 }
 	?>
