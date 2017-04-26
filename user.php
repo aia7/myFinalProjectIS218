@@ -56,7 +56,8 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1><p align="left">Incomplete :</p></h1><br>
+                <h1><p align="left">Incomplete :</p></h1><input type="button" value="ADD"><br>
+
                 <br>
                 <br>
                 <br>
