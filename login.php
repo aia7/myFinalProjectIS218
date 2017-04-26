@@ -74,7 +74,7 @@
   <input type="text" name="email"><br>
  Password: <br>
   <input type="Password" name="Password"><br>
-  <input type="button" value= "Log In" onclick="window.location.href=file:"user.php"> 
+  <input type="button" value= "Log In" onclick=window.location.href="user.php"> 
 </form></center>
 
     <!-- /.container -->
