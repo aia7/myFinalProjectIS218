@@ -54,7 +54,7 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Incomplete</h1>
+                <h1>Incomplete :</h1>
             </div>
         </div>
        
