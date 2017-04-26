@@ -56,6 +56,12 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1><p align="left">Incomplete :</p></h1><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                  <h1><p align="left">Complete :</p></h1>
 
             </div>
