@@ -1,7 +1,7 @@
 <?php
 // if(isset($_POST['submit']))
 require('database.php');
-include('form_handler.php');
+
 {
 	$fname=$_POST['fname'];
 	$lname=$_POST['lname'];
