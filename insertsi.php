@@ -30,7 +30,7 @@
 require('database.php');
 
 {
-	
+
 	$fname=$_POST['fname'];
 	$lname=$_POST['lname'];
 	$email=$_POST['email'];
@@ -63,8 +63,8 @@ require('database.php');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a onclick=window.location.href="mainpage.html" class="navbar-brand" >TODO LIST</a>
-                <a onclick=window.location.href="mainpage.html" class="navbar-brand" > Log Out</a>
+                <a onclick=window.location.href="mainpage.php" class="navbar-brand" >TODO LIST</a>
+                <a onclick=window.location.href="mainpage.php" class="navbar-brand" > Log Out</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
