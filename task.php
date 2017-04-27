@@ -67,10 +67,10 @@
     </div>
 
 <center>
- <form action="insertsi.php" method="post">
+ <form action="taskinsert.php" method="post">
  First Name<input type="text" name="fname" value=""><br>
  Description: <input type="text" name="Description" value=""><br>
- StartDate<input type="text" name="StartDate" value=""><br>
+ StartDate<input type="datetime-local" name="StartDate" value=""><br>
  Message<input type="text" name="message" value=""><br>
  <input type="submit" value="Submit" onclick=window.location.href="user.php"> 
  
