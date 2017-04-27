@@ -26,30 +26,6 @@
 
 <body>
 
-<?php
-
-    require_once 'database.php';
-    //pdoconnect is used to connect to the database
-    $query = 'SELECT * FROM todo ORDER BY due ASC';
-    $statement = $db->prepare($query);
-    $statement->execute();
-    $results = $statement->fetchAll();
-    $statement->closeCursor();
-
-foreach($results as $row) { ?>
-<div class="task">
-        <h3><?php echo $row['task']?></h3>
-    <p>
-        First Name : <span><?php echo $row['FirstName']?></span>
-        <br>
-        Description: <span><?php echo $row['Description'] ?></span>
-        <br>
-
-
-
-
-
-?>
 
 
 
