@@ -26,6 +26,31 @@
 
 <body>
 
+<?php
+
+    require_once 'database.php';
+    //pdoconnect is used to connect to the database
+    $query = 'SELECT * FROM todo ORDER BY due ASC';
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $results = $statement->fetchAll();
+    $statement->closeCursor();
+
+foreach($results as $row) { ?>
+<div class="task">
+        <h3><?php echo $row['task']?></h3>
+    <p>
+        First Name : <span><?php echo $row['FirstName']?></span>
+        <br>
+        Description: <span><?php echo $row['Description'] ?></span>
+        <br>
+
+
+
+
+
+?>
+
 
 
     <!-- Navigation -->
@@ -39,8 +64,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a onclick=window.location.href="mainpage.html" class="navbar-brand" >TODO LIST</a>
-                <a onclick=window.location.href="mainpage.html" class="navbar-brand" > Log Out</a>
+                <a onclick=window.location.href="mainpage.php" class="navbar-brand" >TODO LIST</a>
+                <a onclick=window.location.href="mainpage.php" class="navbar-brand" > Log Out</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
