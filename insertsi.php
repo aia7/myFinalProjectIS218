@@ -30,6 +30,7 @@
 require('database.php');
 
 {
+	echo "hello";
 	$fname=$_POST['fname'];
 	$lname=$_POST['lname'];
 	$email=$_POST['email'];
