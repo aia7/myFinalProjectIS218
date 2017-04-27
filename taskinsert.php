@@ -27,30 +27,28 @@
 
 <body>
 
-<?php
+ <?php
+// if(isset($_POST['submit']))
+require('database.php');
 
-    require_once 'database.php';
-    //pdoconnect is used to connect to the database
-    $query = 'SELECT * FROM todo ORDER BY due ASC';
-    $statement = $db->prepare($query);
-    $statement->execute();
-    $results = $statement->fetchAll();
-    $statement->closeCursor();
+{
+	
+	$dname=$_POST['Description'];
+	$dname=$_POST['StartDate'];
+	$due=$_POST['duedate'];
+	
 
-foreach($results as $row) { ?>
-<div class="task">
-        <h3><?php echo $row['task']?></h3>
-    <p>
-        First Name : <span><?php echo $row['FirstName']?></span>
-        <br>
-        Description: <span><?php echo $row['Description'] ?></span>
-        <br>
-        
+	$sql="INSERT INTO todo (fname,lname,duedate) VALUES (
+	'$dname','$dname','$due')";
 
 
+	$statement = $db->prepare($sql);
+	$statement->execute();
+	$statement->closeCursor();
 
 
-?>
+}
+	?>
 
 
 
@@ -122,25 +120,3 @@ foreach($results as $row) { ?>
 
 </html>
 
-<?php
-// if(isset($_POST['submit']))
-require('database.php');
-
-{
-	$dname=$_POST['Description'];
-	$start=$_POST['StartDate'];
-	$due=$_POST['duedate'];
-
-	
-
-	$sql="INSERT INTO todo (Description,StartDate,duedate) VALUES (
-	$dname','$start','$due)";
-
-
-	$statement = $db->prepare($sql);
-	$statement->execute();
-	$statement->closeCursor();
-
-
-}
-	?>
