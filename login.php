@@ -74,7 +74,7 @@
   <input type="text" name="email"><br>
  Password: <br>
   <input type="Password" name="Password"><br>
-  <button type="button" class="btn btn-outline-danger" onclick=window.location.href="login.php" style="background-color: #0000ff; color: #ffffff" >Login</button> 
+  <button type="button" class="btn btn-outline-danger" onclick=window.location.href="user.php" style="background-color: #0000ff; color: #ffffff" >Login</button> 
 </form></center>
 
     <!-- /.container -->
