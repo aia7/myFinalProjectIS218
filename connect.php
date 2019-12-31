@@ -7,13 +7,7 @@
 	$statement->execute();
 	$results = $statement->fetchAll();
 	$statement->closeCursor();
-
-
-
 ?>
-
-
-    
     
 <!DOCTYPE html>
 <html>
@@ -25,15 +19,13 @@
 
 <!-- the body section -->
 <body>
-		<main>
-			
-	    <?php foreach ($results as $oneLine) : ?>
+	<main>
+		<?php foreach ($results as $oneLine) : ?>
 	    <div>
 	        <?php echo $oneLine['email']; ?>
 	        <br /><br />
 	    </div>
-		<?php endforeach; ?>		
-			
-		</main>
+		<?php endforeach; ?>			
+	</main>
 </body>
 </html>
